@@ -20,16 +20,3 @@ def dataParser(packet):
 if __name__ == '__main__':
 
         sniff(iface='tun0', prn=dataParser)
-
-EJ DEL OUTPUT:
-❯ python3 icmp_transfer.py
-
-127.0.0.1	localhost.localdomain	localhost
-::1		localhost6.localdomain6	localhost6
-
-# The following lines are desirable for IPv6 capable hosts
-::1     localhost ip6-localhost ip6-loopback
-fe00::0 ip6-localnet
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-ff02::3 ip6-allhosts
